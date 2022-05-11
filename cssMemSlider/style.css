@@ -5,7 +5,7 @@
 
 body {
   display: flex;
-  max-width: 1280px;
+  max-width: 80vw;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
@@ -45,22 +45,38 @@ body {
 }
 
 .radio-btns {
-  display: flex;
-  width: 80vw;
+  display: inline-flex;
+  width: 19vw;
   align-items: center;
   justify-content: flex-end;
   margin: auto;
-  margin-top: -6em;
+  margin-left: 73%;
+  margin-top: -7em;
   gap: 1.5em;
+  padding: 1.2em;
+  background-color: #fff;
 }
 
 .btn {
   width: 1em;
   height: 1em;
-  border: 0.12em solid blue;
+  border-radius: 1em;
+  border: 0.125em solid blue;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: blue;  
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: blue;  
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
 
 #radio-btn1:checked~.image1 {
   margin-left: 0px;
