@@ -51,28 +51,34 @@ body {
   justify-content: flex-end;
   margin: auto;
   margin-left: 73%;
-  margin-top: -7em;
-  gap: 1.5em;
+  margin-top: -7.5em;
+  gap: 0.5em;
   padding: 1.2em;
   background-color: #fff;
 }
 
 .btn {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 1em;
+  border: 0.125em solid blue;*/
+  transition: 0.5s ease-in-out; 
+  cursor: pointer;
+}
+
+.label-btn {
+  width: 1.0em;
+  height: 1.0em;
   border-radius: 1em;
   border: 0.125em solid blue;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: blue;  
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.btn:active {
+.btn:hover > .label-btn{
   background-color: blue;  
   transition: 0.5s ease-in-out;
   cursor: pointer;
