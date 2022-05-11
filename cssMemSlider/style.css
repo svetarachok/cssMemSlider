@@ -20,3 +20,60 @@ body {
   padding: 3em 0;
 }
 
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+.slider input {
+  appearance: none;
+}
+
+.image {
+  width: 80vw;
+  transition: 1s ease;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image p {
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.radio-btns {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto;
+  margin-top: -6em;
+  gap: 1.5em;
+}
+
+.btn {
+  width: 1em;
+  height: 1em;
+  border: 0.12em solid blue;
+  cursor: pointer;
+}
+
+
+#radio-btn1:checked~.image1 {
+  margin-left: 0px;
+} 
+
+#radio-btn2:checked~.image1 {
+  margin-left: -25%;
+} 
+
+#radio-btn3:checked~.image1 {
+  margin-left: -50%;
+}
+
+#radio-btn4:checked~.image1 {
+  margin-left: -75%;
+} 
