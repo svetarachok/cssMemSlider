@@ -5,15 +5,17 @@
 
 body {
   display: flex;
-  max-width: 80vw;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #1d1d1d;
 }
 
 .container {
   display: flex;
-  width: 80vw;
+  width: 60vw;
   height: auto;
   overflow: hidden;
   margin: auto;
@@ -30,7 +32,7 @@ input {
 }
 
 .image {
-  width: 80vw;
+  width: 60vw;
   transition: 1s ease;
 }
 
@@ -41,21 +43,22 @@ input {
 }
 
 .image p {
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 1em;
+  font-weight: 900;
+  width: 60vw;
 }
 
 .radio-btns {
   display: inline-flex;
-  width: 19vw;
-  align-items: center;
-  justify-content: flex-end;
-  margin: auto;
-  margin-left: 73%;
-  margin-top: -7.5em;
+  width: fit-content;
+  margin-top: -7.9em;
+  margin-left: auto;
+  margin-right: 20%;
   gap: 0.5em;
   padding: 1.2em;
-  background-color: #fff;
+  background-color: rgb(29, 29, 29);
+  justify-content: flex-end;
 }
 
 .btn {
@@ -72,33 +75,50 @@ input {
   width: 1.0em;
   height: 1.0em;
   border-radius: 1em;
-  border: 0.125em solid blue;
+  background-color: #52aafc;
+  border: 0.125em solid #52aafc;
   transition: 0.5s ease-in-out;
   cursor: pointer;
-  background-color: transparent;
 }
 
 .btn:hover > .label-btn{
-  background-color: blue;
+  border: 0.125em solid white;
+  background-color: white;
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
 #radio-btn1:checked ~ * .btn1 {
-  background-color: blue;
-} 
+  background-color: transparent;
+}
 
 #radio-btn2:checked ~ * .btn2 {
-  background-color: blue;
+  background-color: transparent;
 } 
 
 #radio-btn3:checked ~ * .btn3 {
-  background-color: blue;
+  background-color: transparent;
 } 
 
 #radio-btn4:checked ~ * .btn4 {
-  background-color: blue;
+  background-color: transparent;
 } 
+
+#radio-btn1:checked ~ * .btn1:hover {
+  background-color: transparent;
+}
+
+#radio-btn2:checked ~ * .btn2:hover {
+  background-color: transparent;
+}
+
+#radio-btn3:checked ~ * .btn3:hover {
+  background-color: transparent;
+}
+
+#radio-btn4:checked ~ * .btn4:hover {
+  background-color: transparent;
+}
 
 #radio-btn1:checked~ * .image1 {
   margin-left: 0px;
