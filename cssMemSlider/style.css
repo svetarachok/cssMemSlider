@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+.container {
+  display: flex;
+  width: 60vw;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  padding: 1em 0 3em 0;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+input {
+  appearance: none;
+}
+
+.image {
+  width: 60vw;
+  transition: 1s ease;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+.image p {
+  font-size: 1.6em;
+  padding: 1em;
+  font-weight: 900;
+  width: 60vw;
+}
+
+.radio-btns {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: -7.9em;
+  margin-left: auto;
+  margin-right: 20%;
+  gap: 0.5em;
+  padding: 1.2em;
+  background-color: rgb(29, 29, 29);
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out; 
+  cursor: pointer;
+}
+
+.label-btn {
+  width: 1.0em;
+  height: 1.0em;
+  border-radius: 1em;
+  background-color: #52aafc;
+  border: 0.125em solid #52aafc;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover > .label-btn{
+  border: 0.125em solid white;
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#radio-btn1:checked ~ * .btn1 {
+  background-color: transparent;
+}
+
+#radio-btn2:checked ~ * .btn2 {
+  background-color: transparent;
+} 
+
+#radio-btn3:checked ~ * .btn3 {
+  background-color: transparent;
+} 
+
+#radio-btn4:checked ~ * .btn4 {
+  background-color: transparent;
+} 
+
+#radio-btn1:checked ~ * .btn1:hover {
+  background-color: transparent;
+}
+
+#radio-btn2:checked ~ * .btn2:hover {
+  background-color: transparent;
+}
+
+#radio-btn3:checked ~ * .btn3:hover {
+  background-color: transparent;
+}
+
+#radio-btn4:checked ~ * .btn4:hover {
+  background-color: transparent;
+}
+
+#radio-btn1:checked~ * .image1 {
+  margin-left: 0px;
+} 
+
+#radio-btn2:checked~ * .image1 {
+  margin-left: -25%;
+} 
+
+#radio-btn3:checked~ * .image1 {
+  margin-left: -50%;
+}
+
+#radio-btn4:checked~ * .image1 {
+  margin-left: -75%;
+} 
+
+
+@media (max-width: 1140px) {
+  .image p {
+    font-size: 1.1em;
+    padding: 0.5em;
+  }
+  .radio-btns {
+    margin-top: -5.8em;
+    padding: 0.7em 1.2em;
+}
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .image p {
+    font-size: 0.92em;
+    padding: 0.5em;
+  }
+
+  .image img {
+    border-radius: 0.8em;
+  }
+
+  .label-btn {
+    width: 0.7em;
+    height: 0.7em;
+  }
+  .radio-btns {
+    margin-top: -5.4em;
+    padding: 0.5em 0.7em;
+    gap: 0;
+}
+.btn {
+  width: 1.8em;
+  height: 1.8em
+}
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1em;
+    margin-top: 1.5em;
+  }
+  .image p {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 3.5em 0 0 0;
+  }
+  .radio-btns {
+    margin: -7.8em auto;
+    padding: 0;
+}
+.image img {
+  border-radius: 0.6em;
+}
+}
